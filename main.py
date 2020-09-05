@@ -1,6 +1,7 @@
 import cv2
 capture=cv2.VideoCapture(0)
 fourcc=cv2.VideoWriter_fourcc(*'XVID')
+#60 or 30 frame persecond        resulution you can change it to 
 out=cv2.VideoWriter('Subscribe.mp4',fourcc,60.0,(640,480))
 while(capture.isOpened()):
 	ret,frame=capture.read()
